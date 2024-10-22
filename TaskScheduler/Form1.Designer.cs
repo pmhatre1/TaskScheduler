@@ -56,6 +56,8 @@
             this.reminderCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.createdDateCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastModifiedDateCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.taskButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -64,6 +66,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.taskButton);
             this.groupBox1.Controls.Add(this.dueDateBox);
             this.groupBox1.Controls.Add(this.descriptionBox);
             this.groupBox1.Controls.Add(this.titleBox);
@@ -234,7 +237,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1020, 188);
             this.dataGridView1.TabIndex = 1;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+       
             // 
             // TitleCol
             // 
@@ -306,6 +309,16 @@
             this.lastModifiedDateCol.Name = "lastModifiedDateCol";
             this.lastModifiedDateCol.Width = 125;
             // 
+            // taskButton
+            // 
+            this.taskButton.Location = new System.Drawing.Point(213, 105);
+            this.taskButton.Name = "taskButton";
+            this.taskButton.Size = new System.Drawing.Size(137, 37);
+            this.taskButton.TabIndex = 6;
+            this.taskButton.Text = "Enter";
+            this.taskButton.UseVisualStyleBackColor = true;
+            this.taskButton.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -356,6 +369,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn reminderCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn createdDateCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn lastModifiedDateCol;
+        private System.Windows.Forms.Button taskButton;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 

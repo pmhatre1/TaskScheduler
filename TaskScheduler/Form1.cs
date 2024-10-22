@@ -15,16 +15,26 @@ namespace TaskScheduler
         public Form1()
         {
             InitializeComponent();
+            ConfigureDataGridView();
+        }
+        
+        private void ConfigureDataGridView()
+        {
+           
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            string title = titleBox.Text;
+            string description = descriptionBox.Text;
+            string dueDate = dueDateBox.Text;
+            string status = statusBox.Text;
+            string priorityLevel = priorityLevelBox.Text;
+            string tags = tagBox.Text;
+            string reminders = reminderBox.Text;
+       
+        dataGridView1.Rows.Add(title,description,dueDate,status,priorityLevel,tags,reminders);
+        
         }
     }
 }
