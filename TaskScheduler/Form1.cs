@@ -25,16 +25,31 @@ namespace TaskScheduler
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string title = titleBox.Text;
-            string description = descriptionBox.Text;
-            string dueDate = dueDateBox.Text;
-            string status = statusBox.Text;
-            string priorityLevel = priorityLevelBox.Text;
-            string tags = tagBox.Text;
-            string reminders = reminderBox.Text;
-       
-        dataGridView1.Rows.Add(title,description,dueDate,status,priorityLevel,tags,reminders);
-        
+            var inputValues = new Dictionary<string, string>()
+            {
+                {   "Title",titleBox.Text},
+                { "Description", descriptionBox.Text},
+                { "Due Date",dueDateBox.Text },
+                {"Status",statusBox.Text},
+                {"Priority",priorityLevelBox.Text },
+                {"Tags",tagBox.Text},
+                {"Reminders",reminderBox.Text}
+
+            };
+            object[] rowValues = new object[dataGridView1.Columns.Count];
+            
+            for(int i =0; i<dataGridView1.Columns.Count; i++) 
+                {
+                    string columnName = dataGridView1.Columns[i].Name;
+                    if (inputValues.ContainsKey(columnName))
+                    {
+                        rowValues[i] = inputValues[columnName];
+                    }
+                }
+
+             dataGridView1.Rows.Add(rowValues);
+
+            
         }
     }
 }
