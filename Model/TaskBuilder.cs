@@ -47,5 +47,11 @@ namespace Model
             task.statusBox = status;
             return this;
         }
+
+        public Task Build()
+        {
+            return task;
+        }
+
     }
 }

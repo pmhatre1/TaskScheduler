@@ -243,70 +243,70 @@
             // 
             this.TitleCol.HeaderText = "Title";
             this.TitleCol.MinimumWidth = 6;
-            this.TitleCol.Name = "TitleCol";
+            this.TitleCol.Name = "Title";
             this.TitleCol.Width = 125;
             // 
             // DescCol
             // 
             this.DescCol.HeaderText = "Description";
             this.DescCol.MinimumWidth = 6;
-            this.DescCol.Name = "DescCol";
+            this.DescCol.Name = "Description";
             this.DescCol.Width = 125;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Due Date";
             this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
+            this.Column3.Name = "Due Date";
             this.Column3.Width = 125;
             // 
             // statusCol
             // 
             this.statusCol.HeaderText = "Status";
             this.statusCol.MinimumWidth = 6;
-            this.statusCol.Name = "statusCol";
+            this.statusCol.Name = "Status";
             this.statusCol.Width = 125;
             // 
             // priorityCol
             // 
             this.priorityCol.HeaderText = "Priority";
             this.priorityCol.MinimumWidth = 6;
-            this.priorityCol.Name = "priorityCol";
+            this.priorityCol.Name = "Priority";
             this.priorityCol.Width = 125;
             // 
             // categoryCol
             // 
             this.categoryCol.HeaderText = "Category";
             this.categoryCol.MinimumWidth = 6;
-            this.categoryCol.Name = "categoryCol";
+            this.categoryCol.Name = "Category";
             this.categoryCol.Width = 125;
             // 
             // tagCol
             // 
             this.tagCol.HeaderText = "Tags";
             this.tagCol.MinimumWidth = 6;
-            this.tagCol.Name = "tagCol";
+            this.tagCol.Name = "Tags";
             this.tagCol.Width = 125;
             // 
             // reminderCol
             // 
             this.reminderCol.HeaderText = "Reminders";
             this.reminderCol.MinimumWidth = 6;
-            this.reminderCol.Name = "reminderCol";
+            this.reminderCol.Name = "Reminders";
             this.reminderCol.Width = 125;
             // 
             // createdDateCol
             // 
             this.createdDateCol.HeaderText = "Created Date";
             this.createdDateCol.MinimumWidth = 6;
-            this.createdDateCol.Name = "createdDateCol";
+            this.createdDateCol.Name = "Created Dat";
             this.createdDateCol.Width = 125;
             // 
             // lastModifiedDateCol
             // 
             this.lastModifiedDateCol.HeaderText = "Last Modified Date";
             this.lastModifiedDateCol.MinimumWidth = 6;
-            this.lastModifiedDateCol.Name = "lastModifiedDateCol";
+            this.lastModifiedDateCol.Name = "Last Modified Dat";
             this.lastModifiedDateCol.Width = 125;
             // 
             // taskButton

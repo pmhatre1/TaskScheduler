@@ -17,10 +17,17 @@ namespace TaskScheduler
             InitializeComponent();
             ConfigureDataGridView();
         }
-        
+
         private void ConfigureDataGridView()
         {
-           
+            // Add columns to the DataGridView
+            dataGridView1.Columns.Add("Title", "Title");
+            dataGridView1.Columns.Add("Description", "Description");
+            dataGridView1.Columns.Add("Due Date", "Due Date");
+            dataGridView1.Columns.Add("Status", "Status");
+            dataGridView1.Columns.Add("Priority", "Priority");
+            dataGridView1.Columns.Add("Tags", "Tags");
+            dataGridView1.Columns.Add("Reminders", "Reminders");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -47,9 +54,16 @@ namespace TaskScheduler
                     }
                 }
 
-             dataGridView1.Rows.Add(rowValues);
+            dataGridView1.Rows.Add(rowValues);
+            dataGridView1.Refresh();
+            titleBox.Clear();
+            descriptionBox.Clear();
+            dueDateBox.Clear();
+            statusBox.Clear();
+            priorityLevelBox.Clear();
+            tagBox.Clear();
+            reminderBox.Clear();
 
-            
         }
     }
 }
